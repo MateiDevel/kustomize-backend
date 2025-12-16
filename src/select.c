@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "export.h"
 #include "getUser.h"
+#include "import.h"
 
 void selectOption()
 {
@@ -9,21 +10,37 @@ void selectOption()
 
     int option;
     printf("Welcome to kustomize ! What would you want to do?\n");
+    printf("===============================================\n");
     printf("1. Export Global Config file\n");
+    printf("2. Import Global Config file\n");
+    printf("===============================================\n");
 
     scanf("%d" ,&option);
 
-    if(option == 1)
+    switch (option) 
     {
-        int pathSelect;
-        printf("Defult or custom path? 1 or 2");
-        scanf("%d", &pathSelect);
+        
+        case 1 : {
 
-        if(pathSelect == 1)
+            // make code more organized here please 
+
+            int pathSelect;
+            printf("Defult or custom path? 1 or 2 : ");
+            scanf("%d", &pathSelect);
+
+            switch (pathSelect) 
+            {    
+            case 1:
+                printf("Somethings happening..\n");
+                exportConf(username);
+            }
+        } 
+
+        case 2 : 
         {
-            printf("Somethings happening..");
-            exportConf(username);
+            // i think ill just do them shenanigans in the function so i wont parse the path to the function
+            // idk what is better
+            importConf(username);   
         }
-
     }
 }

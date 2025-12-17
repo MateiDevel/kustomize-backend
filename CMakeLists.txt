@@ -5,4 +5,5 @@ add_executable(kustomize-backend
     src/export.c
     src/select.c
     src/getUser.c
+    src/import.c
 )

@@ -1,6 +1,7 @@
 #include <errno.h>
 #include <stdio.h>
 #include "export.h"
+#include <stdlib.h>
 #include <sys/stat.h>
 
 void exportConf(char *username)
@@ -53,4 +54,12 @@ void exportConf(char *username)
     fclose(copy);
 
     printf("Done");
+}
+
+void exportDir(char *username)
+{
+    char script[256];
+    snprintf(script, sizeof(script), "/bin/bash /home/%s/kustomize-backend/src/scripts/copyDir.sh", username);
+
+    system(script);
 }

@@ -2,5 +2,6 @@
 #define EXPORT_H
 
 void exportConf(char *username);
+void exportDir(char *username);
 
 #endif

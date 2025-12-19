@@ -13,6 +13,7 @@ void selectOption()
     printf("===============================================\n");
     printf("1. Export Global Config file\n");
     printf("2. Import Global Config file\n");
+    printf("3. Copy entire config directory\n");
     printf("===============================================\n");
 
     scanf("%d" ,&option);
@@ -41,6 +42,11 @@ void selectOption()
             // i think ill just do them shenanigans in the function so i wont parse the path to the function
             // idk what is better
             importConf(username);   
+        }
+
+        case 3:
+        {
+            exportDir(username);
         }
     }
 }

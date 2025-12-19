@@ -10,6 +10,7 @@ int main(int argc, char *argv[])
         if(strcmp(argv[i], "--version") == 0)
         {
             printf("kustomize-backend version: %s\n" , VERSION);
+            return 0;
         }
     }
 

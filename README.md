@@ -1,6 +1,9 @@
 # kustomize
 - A handy tool for KDE Plasma users to switch from a rice to another 
 
+# Notice
+- When exporting the .config directory it will be hidden by default. In dolphin, press ```CTRL + h``` to show hidden files
+
 # Current features
 - Can import and export the global config
 - Can export the entire config tree

@@ -6,4 +6,5 @@ add_executable(kustomize-backend
     src/select.c
     src/getUser.c
     src/import.c
+    src/checkThemes.c
 )

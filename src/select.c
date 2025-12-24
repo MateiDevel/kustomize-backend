@@ -34,7 +34,9 @@ void selectOption()
             case 1:
                 printf("Somethings happening..\n");
                 exportConf(username);
+                break;
             }
+            break;
         } 
 
         case 2 : 
@@ -42,11 +44,13 @@ void selectOption()
             // i think ill just do them shenanigans in the function so i wont parse the path to the function
             // idk what is better
             importConf(username);   
+            break;
         }
 
         case 3:
         {
             exportDir(username);
+            break;
         }
     }
 }

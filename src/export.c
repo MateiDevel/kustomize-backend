@@ -3,6 +3,7 @@
 #include "export.h"
 #include <stdlib.h>
 #include <sys/stat.h>
+#include "checkThemes.h"
 
 void exportConf(char *username)
 {
@@ -47,14 +48,17 @@ void exportConf(char *username)
 
     while((c = fgetc(config)) != EOF)
     {
+        checkIfInstalled(config);
         fputc(c, copy);
     }
-
+        
     fclose(config);
     fclose(copy);
 
     printf("Done");
+    
 }
+
 
 void exportDir(char *username)
 {

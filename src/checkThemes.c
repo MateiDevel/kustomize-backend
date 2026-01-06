@@ -1,8 +1,9 @@
 #include "checkThemes.h"
 #include <stdio.h>
 #include <string.h>
+#include <dirent.h>
 
-void checkIfInstalled(FILE *config)
+void checkIfInstalled(FILE *config, char *username)
 {
     printf("running...");
 
@@ -12,11 +13,16 @@ void checkIfInstalled(FILE *config)
     }
 
     char lines[1024];
+    int counts = 0;
 
-    while(fgets(lines, sizeof(lines), config))
-    {
-        if(strstr(lines, "Theme="))
+    rewind(config);
+
+    while (fgets(lines, sizeof(lines), config)) {
+        if (strncmp(lines, "Theme=", 6) == 0) {
+            counts++;
             printf("%s", lines);
+        }
     }
 
+    printf("%d", counts);
 }

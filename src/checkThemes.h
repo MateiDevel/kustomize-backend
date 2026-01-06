@@ -3,6 +3,6 @@
 
 #include <stdio.h>
 
-void checkIfInstalled(FILE *config);
+void checkIfInstalled(FILE *config, char *username);
 
 #endif

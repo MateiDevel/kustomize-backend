@@ -48,7 +48,7 @@ void exportConf(char *username)
 
     while((c = fgetc(config)) != EOF)
     {
-        checkIfInstalled(config);
+        // checkIfInstalled(config, username);
         fputc(c, copy);
     }
 

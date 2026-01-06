@@ -6,7 +6,7 @@
 
 # Current features
 - Can import and export the global config
-- Can export the entire config tree
+- Can import and export the entire config tree
 
 # Under construction
 - Bunch of features to be added (p.s. my first C project, might be crap)

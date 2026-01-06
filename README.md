@@ -1,22 +1,26 @@
 # kustomize
-- A handy tool for KDE Plasma users to switch from a rice to another 
+A handy tool for KDE Plasma users to switch from a rice to another 
+
 
 # Notice
-- When exporting the .config directory it will be hidden by default. In dolphin, press ```CTRL + h``` to show hidden files
+> [!TIP]
+> - When exporting the .config directory it will be hidden by default. In dolphin, press ```CTRL + h``` to show hidden files
 
 # Current features
 - Can import and export the global config
 - Can import and export the entire config tree
 
 # Under construction
-- Bunch of features to be added (p.s. my first C project, might be crap)
-- Refactor code cuz it sucks
-- Will automatically install themes if not installed
+> [!IMPORTANT]
+> - Bunch of features to be added (p.s. my first C project, might be crap)
+> - Refactor code cuz it sucks
+> - Will automatically install themes if not installed
 
 # Setup
-To use the tool , do the following :
+<details>
+<summary>Do the following</summary>
 
-## **Install Dependencies:**
+
 - Debian based:
 ``` 
 sudo apt install cmake build-essential
@@ -56,4 +60,4 @@ After all of that , just run using :
 ```
 
 **Done!**
-
+</details>
